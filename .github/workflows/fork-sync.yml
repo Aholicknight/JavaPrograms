@@ -14,7 +14,7 @@ jobs:
       - uses: tgymnich/fork-sync@v1.4
         with:
           owner: Aholicknight
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           base: master
           head: master
           merge_method: merge

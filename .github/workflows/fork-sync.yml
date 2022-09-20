@@ -2,7 +2,7 @@ name: Sync Fork
 # uses: tgymnich/fork-sync@0cc6ac48fd51415e7c34e5b8823021bc952a5f5f
 on:
   schedule:
-    - cron: '*/5 * * * *' # every 5 minutes
+    - cron: '*/30 * * * *' # every 30 minutes
   workflow_dispatch: # on button click
 
 jobs:
@@ -13,9 +13,10 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v1.4
         with:
-          owner: Aholicknight
+          
           token: ${{ secrets.GITHUB_TOKEN }}
           base: master
           head: master
           merge_method: merge
           pr_title: Fork Sync
+          auto_approve: true

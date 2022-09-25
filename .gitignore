@@ -3,6 +3,9 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
+### GitHub Workflows ###
+.github/workflows/sync-fork.yml
+
 ### Eclipse ###
 .apt_generated
 .classpath

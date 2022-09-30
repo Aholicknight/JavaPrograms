@@ -19,4 +19,4 @@ jobs:
           head: master
           pr_title: Fork Sync
           auto_approve: true
-          merge_method: merge
+          merge_method: rebase
